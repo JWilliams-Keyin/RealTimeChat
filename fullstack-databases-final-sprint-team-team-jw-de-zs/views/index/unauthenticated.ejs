@@ -1,0 +1,11 @@
+<!-- No longer authenticated? This where you go... -->
+<%- include('../partials/header', {title: "Unauthenticated"}) %>
+    <div class="main-content">
+        <h1>Welcome to the Chat!</h1>
+
+        <h3 class = "user-count-box">There are currently <%= onlineUserCount %> users online</h3>
+        <a href = "/signup"><button class = "action-button">Sign Up</button></a>
+
+        <a href = "/login"><button class = "action-button">Login</button></a>
+    </div>
+<%- include('../partials/footer') %>
