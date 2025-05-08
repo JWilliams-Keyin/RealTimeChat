@@ -1,4 +1,4 @@
-Creators: Jack Williams, David Elliot, Zackery Strickland
+Creators: Jack Williams, David Elliott, Zackery Strickland
 
 Initial Skeleton Code: Matthew English
 
