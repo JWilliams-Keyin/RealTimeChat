@@ -1,0 +1,25 @@
+<% if (role === "admin") { %>
+    <div class="navbar">
+        <a href="/dashboard"><button class = "navblock-admin">Chat</button></a>
+    
+    
+        <a href="/profile"><button class = "navblock-admin">Profile</button></a>
+    
+    
+        <a href="/admin/dashboard"><button class = "navblock-admin">Dashboard</button></a>
+    
+    
+        <a href="/logout"><button class = "navblock-admin">Logout</button></a>
+    </div>
+<% } else { %>
+    <div class="navbar">
+        <a href="/dashboard"><button class = "navblock-user">Chat</button></a>
+    
+    
+        <a href="/profile"><button class = "navblock-user">Profile</button></a>
+    
+    
+        <a href="/logout"><button class = "navblock-user">Logout</button></a>
+    </div>
+<% } %>
+     

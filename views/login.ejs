@@ -1,0 +1,29 @@
+<!-- Login page below -->
+
+<%- include('partials/header', {title: "Login"}) %>
+    <div class = "main-content">
+        <h1>Login</h1>
+        <div class = "login-signup-card">
+            <form action = "/login" method = "POST">
+                <% if (errorMessage) { %>
+                    <p class = 'error-message'><%= errorMessage %></p>
+                <% } else if (successMessage) { %>
+                    <p class="success-message"><%= successMessage %></p>
+                <% } %>
+                <div class = "form-input-container">
+                    <label for = "username">Username:</label>
+                    <input type = "username" name = "username" id = "username" required>
+                </div>
+                <div class = "form-input-container">
+                    <label for = "password">Password:</label>
+                    <input type = "password" name = "password" id = "password" required>
+                </div>
+                <button type="submit" class="action-button">Login</button>
+            </form>
+            <p style="font-size: 16px; margin-top: 30px; text-align: center;">
+                Don't have an account?&nbsp;
+                <a href="/signup" class="register-link">Sign up!</a>
+            </p>
+        </div>
+    </div>
+<%- include('partials/footer') %>
